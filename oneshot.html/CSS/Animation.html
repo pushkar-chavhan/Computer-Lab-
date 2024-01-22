@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animations</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .box{
+            width: 100vw;
+            height:100vh ;
+            background-color: antiquewhite;
+            border: 5px solid black;
+        }
+        .con{
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border:3px solid yellow ;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            animation-name: rightMovement;
+            animation-duration: 5s;
+            animation-iteration-count: 2;
+            animation-delay: 1s;
+            animation-play-state: running;
+        }
+        .con2{
+            width: 350px;
+            height: 80px;
+            background-color: blue;
+            border:3px solid yellow ;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            animation: 5s ease-in 1s infinite none running leftMovement;
+
+        }
+        @keyframes leftMovement{
+            from{
+                top: 650px;
+                left: 1350px;
+            }
+            to{
+                top: 650px;
+                right: 1200px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="con"></div>
+        <div class="con2"></div>
+    </div>
+</body>
+</html>

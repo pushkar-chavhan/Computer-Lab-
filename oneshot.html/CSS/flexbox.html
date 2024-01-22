@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flexbox</title>
+    <style>
+        /* all flex property apply on container */
+        .con{
+            background-color: beige;
+            border: 2px solid darkblue;
+            margin: 2px;
+            padding: 2px;
+            height: 1200px;
+            /* disply flex means you can property of flex */
+            display: flex;
+            flex-direction: row;
+            /* flex-wrap: wrap; */
+            justify-content: center;
+            justify-content: space-between;
+            justify-content: space-evenly;
+            align-items: center;
+            flex-wrap: wrap;
+            flex-grow: 35;
+            align-self: center;
+        }
+        .box{
+            background-color: aqua;
+            height: 200px;
+            width: 200px;
+
+        }
+        #box1{
+            background-color: aquamarine;
+
+        }
+        #box2{
+            background-color: violet;
+
+        }
+        #box3{
+            background-color: brown;
+
+        }
+        #box4{
+            background-color: chartreuse;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="con">
+        <div class="box" id="box1"></div>
+        <div class="box" id="box2"></div>
+        <div class="box" id="box3"></div>
+        <div class="box" id="box4"></div>
+    </div>
+</body>
+</html>
